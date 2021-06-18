@@ -32,8 +32,12 @@ low_ed_swears = 0
 # opening file
 Path = sys.argv[1]
 filelist = os.listdir(Path)
+filelist = [file for file in filelist if file.endswith('.gz')]
+i = 0
 for x in filelist:
     if x.endswith('.gz'):
+        i = i + 1
+        print('now processing ' + x + ' ' + str(i) + ' out of ' + str(len(filelist)))
         with gzip.open(x) as inp:
             # for each tweet convert it to a python dictionary
             for jsonObj in inp:

@@ -13,3 +13,9 @@ read DIRECTORY
 
 # connects with sever and downloads files
 scp $USERNAME@karora.let.rug.nl:/net/corpora/twitter2/Tweets/2021/03/20210328:*.out.gz $DIRECTORY
+
+scp $USERNAME@karora.let.rug.nl:/net/corpora/twitter2/Tweets/2021/02/20210211:*.out.gz $DIRECTORY
+
+scp $USERNAME@karora.let.rug.nl:/net/corpora/twitter2/Tweets/2021/05/20210504:*.out.gz $DIRECTORY
+
+scp $USERNAME@karora.let.rug.nl:/net/corpora/twitter2/Tweets/2021/05/20210524:*.out.gz $DIRECTORY
